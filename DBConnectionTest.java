@@ -10,7 +10,7 @@ public class DBConnectionTest {
 		// TODO Auto-generated method stub
 		String url="jdbc:mysql://localhost:3306/hospital?useSSL=false&allowPublicKeyRetrieval=true";
 		String user="root";  //mysql username
-		String password="Khushi@123";
+		String password="Karan@123";
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
