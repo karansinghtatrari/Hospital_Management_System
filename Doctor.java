@@ -1,29 +1,32 @@
 package HospitalManagement;
 
 public class Doctor {
-	private static int IdCounter=1;
-	private int Id;
-	private String name;
-	private String speciality;
-	
-	public Doctor(String name,String speciality) {
-		this.Id=IdCounter++;
-		this.name=name;
-		this.speciality=speciality;
-	}
-	
-	public String toString() {
-		return "Doctor ID:"+Id+", Name:"+name+",Speciality:"+speciality;
-	}
-	public int getId() {
-		return Id;
-	}
-	public String getname() {
-		return name;
-	}
-	public String getspeciality() {
-		return speciality;
-	}
+    private static int idCounter = 1;
+
+    private final int id;
+    private final String name;
+    private final String speciality;
+
+    public Doctor(String name, String speciality) {
+        this.id = idCounter++;
+        this.name = name;
+        this.speciality = speciality;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    @Override
+    public String toString() {
+        return "Doctor ID: " + id + ", Name: " + name + ", Speciality: " + speciality;
+    }
 }
-
-
